@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Admin login</title>
+</head>
+<body>
+    <div class="container">
+        <div class="loginlogo"  class="fade-in-image">
+            <img src="img/logoandtag.png" class="img" alt="logo"><br> 
+        </div>
+        <div class="box form-box">
+            <header>LOGIN</header> <br> 
+        <form action="login_process.php" method="POST" onsubmit="return validateLoginForm()">
+            
+        <br>
+        <div class="field input">
+            <label>&nbsp;&nbsp;USERNAME</label>
+            <input type="text" required name="username" placeholder="Username"><br>
+        </div>
+
+        <div class="field input">
+            <label>&nbsp;&nbsp;PASSWORD</label>
+            <input type="password" required name="password" placeholder="Password"><br>
+        </div> 
+        
+        <div class="field">
+            <div class="button">
+                <input type="submit" class="btn" name="submit" value="LOG IN">
+            </div>
+
+        </div> 
+
+    </form>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
